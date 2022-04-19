@@ -205,7 +205,6 @@ header ul{
 .col{
   width: 100%;
   padding: 1rem 1rem;
-  margin: 5px 5px;
 }
 
 .col-2{
@@ -234,8 +233,10 @@ header ul{
   margin: 1rem 1rem;
 }
 
-.submit{
-  margin: 1rem auto;
+.btn{
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 2rem;
   color: #000;
   text-align: center;
   width: 15%;
