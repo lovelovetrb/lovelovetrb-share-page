@@ -9,18 +9,18 @@
     <meta name="description" content="This page is about @lovelovetrb">
 
     <title>@lovelovetrb</title>
-    <!-- 独自CSS読み込み -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <!-- GoogleFonts読み込み -->
+    <!-- GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kiwi+Maru:wght@300&family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- ヘッダー -->
+    <!-- header -->
     <div id="particles-js"></div>
     <div id="gotop" ><a href="#" class="fa-solid fa-angles-up"></a></div>
     <header>
@@ -39,6 +39,9 @@
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#hobby">hobby</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#form">Contact</a>
               </li>
               <li class="nav-item">
@@ -52,20 +55,20 @@
         </nav>
     </header>
 
-    <!--コンテンツ-->
-      <!-- カード -->
+    <!-- content -->
+      <!-- about -->
       <section class="about" id="about">
         <div class="wrapper">
           <h2>About 'Mizuki'</h2>
           <div class="float">
-            <img src="./src/icon.JPG" alt="icon">
+            <img src="./src/icon.jpeg" alt="icon">
             <div class="float_right">
               <h2 class="name">Mizuki</h2>
               <table class="description">
                 <tbody>
                   <tr>
                     <td>Job</td>
-                    <td class="content">College Student (sophomore)</td>
+                    <td class="content">College Student</td>
                   </tr>
                   <tr>
                     <td>Major</td>
@@ -81,10 +84,10 @@
           </div>
         </div>
       </section>
-      <!-- コンテンツ -->
+      <!-- skill -->
       <section class="skills" id="skills">
         <div class="wrapper">
-          <h2>Skills</h2>
+          <h2>Skills...</h2>
           <div class="float">
             <div class="skills_left">
               <h3>Qualification</h3>
@@ -107,31 +110,45 @@
           </div>
         </div>
       </section>
+      <!-- hobby -->
+      <section class="hobby" id="hobby">
+        <div class="wrapper">
+          <h2>My Hobbies...</h2>
+            <div class="hobbies">          
+              <ul>
+                <li>FPV Tiny Drone <br class="br_mobile"><a href="http://www.happymodel.cn/index.php/2019/11/22/happymodel-mobula6-1s-65mm-brushless-whoop-drone/" target="_blank" rel="noopener noreferrer">(Drone : Mobula6 25000KV)</a></li>
+                <li>Fishing <br class="br_mobile">(Solt Water & Boat Fishing)</li>
+                <li>Picture <br class="br_mobile"><a href="https://www.olympus-imaging.jp/product/dslr/em10mk2/" target="_blank" rel="noopener noreferrer">(Olympus OM-D E-M10 Mark II)</a></li>
+                <li>Watch Baseball Game</li>
+              </ul>
+            </div>
+        </div>
+      </section>
       <!-- Form -->
       <div id="form" class="wrapper">
         <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScW7nIZMqS_IdaplqtkEBbfu7aYX9xBfWWLIOTWbOzJ6eQOhQ/formResponse"  method="post" target="dummyIframe" onsubmit="submitted=true;">
           <h2 class="my-2">Contact</h2>
-          <!-- 名前 -->
+          <!-- name -->
           <p class="my-2">名前</p>
           <div class="row">
             <input type="text" class="col" placeholder="名前" required name="entry.2137169590" >
           </div>
-          <!-- メールアドレス -->
+          <!-- mail -->
           <p class="my-2">メールアドレス</p>
           <div class="row">
             <input type="text" class="col" placeholder="example@example.com" required name="entry.1607085127" >
           </div>
-          <!-- 本文 -->
+          <!-- text -->
           <p class="my-2">本文</p>
           <div class="row">
             <textarea class="col" placeholder="本文をここに入力してください" id="" cols="30" rows="10" required name="entry.1711794495"></textarea>
           </div>
-          <!-- 送信 -->
+          <!-- submit -->
           <div class="col"><input class="btn" type="submit" value="送信"></div>
         </form>
       </div>
       
-      <!-- 送信後の処理 -->
+      <!-- after submit -->
       <script type="text/javascript">
        var submitted = false;
      </script>
@@ -147,7 +164,7 @@
         <address>
           <span>© lovelovetrb All Rights Reserved.</span>
         </address>
-        <p class="ver">last update 4.19</p>
+        <p class="ver">last update 5.12</p>
       </div>
     </footer>
 
