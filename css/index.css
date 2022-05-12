@@ -207,10 +207,6 @@ header ul{
   padding: 1rem;
 }
 
-.hobbies h3{
-  margin: 1rem 0;
-}
-
 .hobbies li{
   padding: 1em 0;
   margin-left: 1rem;
@@ -266,7 +262,7 @@ header ul{
   margin: 1rem 1rem;
 }
 
-.btn{
+.submit{
   display: block;
   margin: 0 auto;
   padding: 1rem 2rem;
