@@ -81,6 +81,14 @@ body {
   z-index: 50;
 }
 
+.url::after{
+  content: '\f14c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 10px;
+  padding-left: 7px;
+}
+
 /* HEDDER
 ================================================ */
 header{
