@@ -175,9 +175,6 @@
     /* CONTENT
     ====================================== */
     /* about */
-    .about{
-        height: 35rem;
-    }
 
     .name{
         padding: 0;
@@ -244,7 +241,6 @@
         margin: 1rem auto;
         clip-path: none;
         border-radius: 15px;
-        height: 35rem;
     }
 
     .name{
@@ -258,7 +254,7 @@
         margin: 8rem auto;
         clip-path: none;
         border-radius: 15px;
-        height: 40rem;
+
     }
 
     /* hobby */
@@ -268,7 +264,6 @@
         margin: 8rem auto;
         clip-path: none;
         border-radius: 15px;
-        height: 28rem;
     }
 
     .br_mobile{display: block;}
