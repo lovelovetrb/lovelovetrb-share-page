@@ -192,6 +192,11 @@ header ul{
   padding: 0 1rem;
 }
 
+.sub_menu li{
+  font-size: 1em;
+  margin-left: 2rem;
+}
+
 /* HOBBY
 ================================================ */
 .hobby{
