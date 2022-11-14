@@ -58,23 +58,29 @@ body {
 ==================================================== */
 
 .marge {
-  padding: 7vh;
+  /* padding: 30px; */
+}
+
+main{
+  display: flex;
+  height: 100vh;
 }
 
 .wrapper {
   position: relative;
   max-width: 1000px;
-  height: 70vh;
   margin: 0 auto;
-  background-color: var(--main_color);
-  border-radius: 20px;
-  padding: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80%;
 }
 
+.wrapper div{
+  background-color: var(--main_color);
+  border-radius: 20px;
+    padding: 3rem;
+}
 
 #particles-js{ 
 	position:fixed;
@@ -104,6 +110,7 @@ body {
 }
 
 .text{
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -114,14 +121,18 @@ justify-content: center;
 flex-wrap: wrap;
 }
 
+.sns-list li {
+  width: calc(100%/10);
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .sns-list i{
   font-size: 1.5rem;
   color: #fff;
   background-color: #444444;
   padding: 1rem;
   border-radius: 20px;
-  margin-right: 30px;
-  margin-top: 3rem;
 }
 
 /* FOOTER

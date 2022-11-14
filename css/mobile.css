@@ -3,14 +3,18 @@
 
 @media screen and (max-width: 1000px) {
 
-.sns-list i {
+    .sns-list li{
+        width: calc(100%/6);
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .sns-list i {
         font-size: 1.5rem;
         color: #fff;
         background-color: #444444;
         padding: 1rem;
         border-radius: 20px;
-        margin-right: 10px;
-        margin-top: 4rem;
     }
 
 }
@@ -37,8 +41,15 @@
     
     
         .name {
+            margin-top: 2rem;
             font-size: 1rem;
             text-align: center;
+        }
+
+        .sns-list li{
+            width: calc(100%/3);
+            text-align: center;
+            margin-top: 1rem;
         }
     
         .sns-list i {
@@ -47,7 +58,6 @@
             background-color: #444444;
             padding: .5rem;
             border-radius: 20px;
-            margin-right: 10px;
         }
     
         .text {
