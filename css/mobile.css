@@ -3,276 +3,56 @@
 
 @media screen and (max-width: 1000px) {
 
-    /* root */
-    img{
-        width: 100%;
-    }
-
-    h2{
-      padding: 0 1rem;
-      font-size: 1.5rem;
-    }
-
-    h3{
-        font-size: 1.3rem;
-    }
-    
-    p, td,li{
-      font-size: 1rem;
-      line-height: 1.7;
-      padding: .5rem 0;
-    }
-
-
-    /* Layout 
-    ==================================================== */
-    #gotop{
+.sns-list i {
         font-size: 1.5rem;
-        color: var(--font_color);
-        position: fixed;
-        bottom: 50px;
-        right: 50px;
-        z-index: 80;
-    }
-
-    /* HEADDER
-    ====================================== */
-  
-    header{
-        font-family: 'Comfortaa', cursive;
-        width: 100%;
-        padding: 1.5rem .5rem;
-    }
-
-    header ul{
-        display: inline;
-    }
-
-    .navbar-brand{
-        padding: .5rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  
-    /*========= ナビゲーションのためのCSS ===============*/
-
-    #g-nav{
-        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-        position:fixed;
-        z-index: 999;
-        /*ナビのスタート位置と形状*/
-        top:0;
-        right: -120%;
-        width:100%;
-        height: 100vh;/*ナビの高さ*/
-        background:#0f0e17;
-        /*動き*/
-        transition: all 0.6s;
-    }
-
-    /*アクティブクラスがついたら位置を0に*/
-    #g-nav.panelactive{
-        right: 0;
-    }
-
-    /*ナビゲーションの縦スクロール*/
-    #g-nav.panelactive #g-nav-list{
-        /*ナビの数が増えた場合縦スクロール*/
-        position: fixed;
-        z-index: 999; 
-        width: 100%;
-        height: 100vh;/*表示する高さ*/
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    #g-nav-list{
-        margin-top: 5rem; 
-    }
-
-    /*ナビゲーション*/
-    #g-nav ul {
-        /*ナビゲーション天地中央揃え*/
-        z-index: 999;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-    }
-
-    /*リストのレイアウト設定*/
-
-    #g-nav li{
-        list-style: none;
-        text-align: center;
-    }
-
-    #g-nav li a{
-        color: var(--font_color);
-        text-decoration: none;
-        padding:10px;
-        display: block;
-        position: relative;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-weight: bold;
-    }
-
-    /*========= ボタンのためのCSS ===============*/
-    .menu-btn{
-        position:absolute;
-        z-index: 9999;/*ボタンを最前面に*/
-        top:20px;
-        right: 10px;
-        cursor: pointer;
-        width: 50px;
-        height:50px;
-    }
-        
-    /*×に変化*/	
-    .menu-btn span{
-        display: inline-block;
-        transition: all .4s;
-        position: absolute;
-        left: 14px;
-        height: 3px;
-        border-radius: 2px;
-        background-color: #fff;
-        width: 45%;
-    }
-
-    .menu-btn span:nth-of-type(1) {
-        top:15px;	
-    }
-
-    .menu-btn span:nth-of-type(2) {
-        top:23px;
-    }
-
-    .menu-btn span:nth-of-type(3) {
-        top:31px;
-    }
-
-    .menu-btn.active span:nth-of-type(1) {
-        top: 18px;
-        left: 18px;
-        transform: translateY(6px) rotate(-45deg);
-        width: 30%;
-    }
-
-    .menu-btn.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-
-    .menu-btn.active span:nth-of-type(3){
-        top: 30px;
-        left: 18px;
-        transform: translateY(-6px) rotate(45deg);
-        width: 30%;
-    }
-
-
-    /* CONTENT
-    ====================================== */
-    /* about */
-
-    .name{
-        padding: 0;
-    }
-
-    .float img{
-        display: block;
-        height: 180px;
-        width: 180px;
-        border-radius: 50%;
-        padding: 1em;
-        margin: 0 auto;
-    }
-
-    .br_mobile{display: none;}
-    
-    /* form */
-    .form h2{
-      padding: 0;
-    }
-    
-    .submit{
-      width: 90%;
+        color: #fff;
+        background-color: #444444;
+        padding: 1rem;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-top: 4rem;
     }
 
 }
 
 @media screen and (max-width: 480px) {
 
-    /* root */
-    h2{
-        padding: 0 1rem;
-        font-size: 1.5rem;
-    }
-    
-    p, td, li{
-        font-size: 1rem;
-        line-height: 1.7;
-        padding: .5rem 0;
-    }
-
     /* Layout 
-    ==================================================== */
+        ==================================================== */
+        .wrapper {
+            width: 80%;
+        }
     
-    .float{
-        display: block;
-    }
-
-    #gotop{
-        font-size: 1.5rem;
-        color: var(--font_color);
-        position: fixed;
-        bottom: 40px;
-        right: 25px;
-        z-index: 80;
-    }
-
-    /* CONTENT
-    ================================================ */
-    /* about */
-    .about{
-        width: 90%;
-        padding: 2rem 0;
-        margin: 1rem auto;
-        clip-path: none;
-        border-radius: 15px;
-    }
-
-    .name{
-        margin: auto 0;
-    }
-
-    /* skills */
-    .skills{
-        width: 90%;
-        padding: 2rem 0;
-        margin: 8rem auto;
-        clip-path: none;
-        border-radius: 15px;
-
-    }
-
-    /* hobby */
-    .hobby{
-        width: 90%;
-        padding: 2rem 0;
-        margin: 8rem auto;
-        clip-path: none;
-        border-radius: 15px;
-    }
-
-    .br_mobile{display: block;}
-
-    /* form */
-    .form h2{
-        padding:1rem 0;
-    }
-
+    
+        /* CONTENT
+        ====================================== */
+    
+        .icon {
+            display: block;
+            width: 80%;
+            border-radius: 50%;
+            padding: 1em;
+            margin: 0 auto;
+        }
+    
+    
+        .name {
+            font-size: 1rem;
+            text-align: center;
+        }
+    
+        .sns-list i {
+            font-size: 1rem;
+            color: #fff;
+            background-color: #444444;
+            padding: .5rem;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+    
+        .text {
+            font-size: .5rem;
+        }
 
 }
   

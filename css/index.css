@@ -41,28 +41,40 @@ img{
   width: 100%;
 }
 
-section{
-  margin-top: 5rem;
-  
+a{
+  cursor: pointer;
 }
+
 
 body {
   font-size: 1.1rem;
   font-family: 'Klee One', cursive;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: var(--font_color);
 }
 
 /* Layout 
 ==================================================== */
-.wrapper{
+
+.marge {
+  padding: 7vh;
+}
+
+.wrapper {
   position: relative;
   max-width: 1000px;
-  width: 100%;
+  height: 70vh;
   margin: 0 auto;
-  padding: 0 0;
+  background-color: var(--main_color);
+  border-radius: 20px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 }
+
 
 #particles-js{ 
 	position:fixed;
@@ -70,230 +82,60 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color:#000;
+  padding: 1rem;
 }
 
-#gotop{
-  font-size: 1.5rem;
-  color: var(--font_color);
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 50;
-}
 
-.url::after{
-  content: '\f14c';
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  font-size: 10px;
-  padding-left: 7px;
-}
-
-/* HEDDER
-================================================ */
-header{
-  font-family: 'Comfortaa', cursive;
-  width: 100%;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-}
-
-header button{
-  display: none;
-}
-
-header nav{
-  margin: auto 0;
-}
-
-header ul{
-  display: flex;
-}
-
-#nav li{
-  font-size: 1.5rem;
-  margin: 0 1rem;
-  padding: 0 5px;
-}
 
 /* CONTENT
 ================================================ */
-/* about */
-.about{
-  width: 100%;
-  padding: 8rem 0;
-  clip-path: polygon(0 0,100% 10%,100% 90%,0 100%);
-  background-color: var(--main_color);
-}
 
-.about h2{
-  padding-bottom: 1em;
-}
-
-.float{
-  display: flex;
-}
-
-.float img{
+.icon{
   display: block;
   width: 30%;
   border-radius: 50%;
-  height: 100%;
   padding: 1em;
   margin: 0 auto;
 }
-.float_right{
-  padding-left: 1em;
-  width: 70%;
-}
 
-.description *{
-  
-  padding-right:1rem;
-}
-
-.content::before{
-  content: ':';
-  font-size: 1.1em;
-  padding-right: 1rem;
-}
-
-
-/* skills */
-.skills{
-  width: 100%;
-  padding: 8rem 0;
-  clip-path: polygon(0 10%,100% 0,100% 100%,0 90%);
-  background-color: var(--main_color);
-}
-
-.skills h3{
-  margin: 1rem 0;
-}
-
-.skills li{
-  padding: .5em 0;
-}
-
-.skills li::before{
-  content: '☆';
-  font-size: 1rem;
-  padding-right: .5rem;
-  margin-left: 1rem;
-}
-
-.skills_left,.skills_right{
-  padding: 1rem;
-  
-}
-
-.skills_right{
-  margin: 0 auto;
-}
-
-.caution::after{
-  content: '← I hardly know...';
-  font-size: .7em;
-  padding: 0 1rem;
-}
-
-.sub_menu li{
-  font-size: 1em;
-  margin-left: 2rem;
-}
-
-/* HOBBY
-================================================ */
-.hobby{
-  width: 100%;
-  padding: 8rem 0;
-  clip-path: polygon(0 0,100% 10%,100% 90%,0 100%);
-  background-color: var(--main_color);
-}
-
-
-.hobbies{
-  padding: 1rem;
-}
-
-.hobbies li{
-  padding: 1em 0;
-  margin-left: 1rem;
-}
-
-.hobbies li::before{
-  content: '☆';
-  font-size: 1rem;
-  padding-right: .5rem;
-}
-
-.br_mobile{display: none;}
-
-/* FORM
-================================================ */
-.my-2{
-  margin: 1rem 0;
-}
-
-.row{
-  width: 100%;
-  display: flex;
-}
-
-.col{
-  width: 100%;
-  padding: 1rem 1rem;
-}
-
-.col-2{
-  width: 50%;
-}
-
-.col-2 input{
-  width: 100%;
-  margin: 5px 5px;
-  padding: 1rem 1em;
-}
-
-.form{
-  width: 90%;
-  margin: 8rem auto;
-  padding: 2rem;
-  background-color: var(--main_color);
-  border-radius: 15px;
-}
-
-.checkbox{
-  margin: 2rem 1rem;
-}
-
-.inline-checkbox{
-  margin: 1rem 1rem;
-}
-
-.submit{
-  display: block;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  color: #000;
+.name{
+  font-size: 2rem;
   text-align: center;
-  width: 15%;
-  background-color: rgba(255, 255, 255, .6);
-  border-radius: 15px;
+}
+
+.text{
+  text-align: center;
+}
+
+.sns-list{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.sns-list i{
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #444444;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-top: 3rem;
 }
 
 /* FOOTER
 ================================================ */
 footer{
+  height: 7vh;
   text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
   bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 footer span{
+  color: rgba(255, 255, 255, .4);
   display: block;
   margin: 0.5rem;
 }

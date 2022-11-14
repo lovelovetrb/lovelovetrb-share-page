@@ -1,2 +1,2 @@
 # about
-This code is infomation of lovelovetrb page!
+This code is lovelovetrb's SNS share **page**
