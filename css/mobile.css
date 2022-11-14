@@ -42,8 +42,13 @@
     
         .name {
             margin-top: 2rem;
-            font-size: 1.5rem;
+            font-size: 2rem;
             text-align: center;
+        }
+        
+
+        .text {
+            font-size: 1rem;
         }
 
         .sns-list li{
@@ -60,9 +65,5 @@
             border-radius: 20px;
         }
     
-        .text {
-            font-size: .7rem;
-        }
-
 }
   
